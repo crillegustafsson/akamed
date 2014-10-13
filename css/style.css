@@ -99,6 +99,7 @@ body {
   width: 100%;
   margin: 0 auto;
   max-width: 800px;
+  overflow: hidden; 
 }
 header {
   text-align: center;
@@ -412,6 +413,23 @@ p#leftside {
   left: 43px;
 }
 
+.hide{
+   display: none;
+   opacity: 0;
+}
+.disp{
+  display: block;
+
+}
+#result{
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  top: 175px;
+  width: 800px;
+  background-color: #666;
+
+}
 
 @media all and (max-width: 600px) {
   #menu {

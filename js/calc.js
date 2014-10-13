@@ -1,6 +1,7 @@
       function calculateRoute(from, to, datepicker, platser, bes) {
         // Center initialized to Naples, Italy
         console.log(datepicker + " " + platser + " " + bes);
+
         var myOptions = {
           zoom: 10,
           center: new google.maps.LatLng(40.84, 14.25),
@@ -8,6 +9,7 @@
         };
         // Draw the map
         var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
+        var test = document.getElementById("tt");
  
         var directionsService = new google.maps.DirectionsService();
         var directionsRequest = {
@@ -15,6 +17,7 @@
           destination: to,
           travelMode: google.maps.DirectionsTravelMode.DRIVING,
           unitSystem: google.maps.UnitSystem.METRIC
+
         };
         
         console.log();
@@ -119,9 +122,17 @@ function skicka(){
  
         $("#calculate-route").submit(function(event) {
 
+            
+               $('#datumDisplay').html( $("#datepicker").val()  );
+               $('#besDisplay').html( $("#bes").val()  );
+              $('#result').removeClass('hide');
+              $('#result').addClass('disp');
+
+
           event.preventDefault();
           calculateRoute($("#from").val(), $("#to").val(), $("#datepicker").val(), $("#platser").val(), $("#bes").val());
 
-          
+
+           
         });
       });
