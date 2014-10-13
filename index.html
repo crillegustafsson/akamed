@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Destination</title>
+  </head>
+  <body>
+  <div id="body">
+  <div id="wrapper">
+      <header>
+        <img src="img/logo.png">
+      </header>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html" class="sok active"></a></li>
+          <li><a href="add.html" class="add"></a></li>
+          <li><a href="#" class="stars"></a></li>
+          <li><a href="profil.html" class="profile"></a></li>
+        </ul>
+      </div>
+
+    <div id="content">
+    <form id="calculate-route" name="calculate-route" action="#" method="get">
+      <div id="box">
+        <div id="leftbox">
+          <label for="from" class="from">Från:</label>
+        </div>
+        <div id="rightbox">
+          <input type="text" id="from" name="from" required="required" placeholder="Halmstad" size="30" />
+       </div>
+      </div>
+      <div id="box">
+        <div id="leftbox">
+         <label for="to" class="to">Till:</label>
+       </div>
+        <div id="rightbox">
+          <input type="text" id="to" name="to" required="required" placeholder="Göteborg" size="30" />
+        </div>
+      <br />
+      </div>
+      <div id="box">
+        <div id="leftbox">
+          <label for="to" class="to">Datum:</label>
+        </div>
+        <div id="rightbox">
+          <input type="text" id="datepicker" name="datum" required="required" placeholder="Datum" size="30" />
+        </div>
+      </div>
+      <input class="button" type="submit" value="Sök resa" />
+      <!--<input type="reset" />-->
+    </form>
+    <p id="error"></p>
+    </div>
+
+    <div id="rightside">
+      <div id="result">
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  </body>
+</html>
