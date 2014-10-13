@@ -2,6 +2,16 @@
 /*-------============= Logga in ==========---------------*/
 
 
+$ProfilRes ="";
+$Prow_cnt = "";
+$user = "";
+$logout = "";
+$login = "";
+$feedback = "";
+$reg = "";
+$annons = "";
+
+
   $tablePost = "user";
 
   $email = isset($_POST['email']) ? $_POST['email'] : '';
@@ -16,7 +26,7 @@
 
 
             $query = <<<END
-              SELECT Fname, Lname, Password, UserID, Email 
+              SELECT Fnamn, Enamn, Email, Aid, tele, password 
               FROM {$tablePost} 
               WHERE Email = '{$email}'; 
 END;
@@ -34,9 +44,9 @@ END;
 session_regenerate_id(); 
  
 $_SESSION["Email"] = $email; 
-$_SESSION["UserID"] = $row->UserID; 
-$_SESSION["Fname"] = $row->Fname; 
-$_SESSION["Lname"] = $row->Lname; 
+$_SESSION["Aid"] = $row->Aid; 
+$_SESSION["Fnamn"] = $row->Fnamn; 
+$_SESSION["Enamn"] = $row->Lnamn; 
  
 header("Location: index.php"); 
 
@@ -85,7 +95,7 @@ $password = htmlspecialchars($password);
       {$feedback}
     
         <div id="leftbox" class="loginbox">
-          <form action="index.php" method="post" id="login-form">
+          <form action="profil.php" method="post" id="login-form">
             <div id="leftbox">
             <label for="from" class="passbox">Användarnamn:</label>
             <input type="text" class="user" id="indexUser" name="email" value="" placeholder=""/>

@@ -305,6 +305,9 @@ input#slideThree {
   color: #333;
   padding: 10px;
 }
+.loginbox .user, .loginbox .pass {
+  width: 235px;
+}
 #passbox {
   float: right;
   background: #fff;

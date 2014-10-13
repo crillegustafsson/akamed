@@ -86,15 +86,7 @@ $password = htmlspecialchars($password);
     
         <div id="leftbox" class="loginbox">
           <form action="index.php" method="post" id="login-form">
-            <div id="leftbox">
-            <label for="from" class="passbox">Användarnamn:</label>
-            <input type="text" class="user" id="indexUser" name="email" value="" placeholder=""/>
-            </div>
-            <div id="rightbox">
-            <label for="from" class="passbox">Lösenord:</label>
-            <input type="password" class="pass" id="indexPass" name="password" value="" placeholder=""/>
-            <input type="submit" class="button" id="LogginButton" value="Login" id="button">
-            </div>
+
           </form>
        </div>
       </div>
