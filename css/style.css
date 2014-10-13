@@ -165,6 +165,7 @@ h2 {
 #content {
   text-align: center;
   width: 380px;
+  display: table;
   margin: 0 auto;
 }
 img.icons {
@@ -250,6 +251,73 @@ input#slideThree {
 #extra {
   margin-top: 10px;
 }
+
+/* RESEBOXEN */
+
+#resebox {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 5px;
+  float: left;
+  width: 100%;
+}
+#resebox1 {
+  float: left;
+  width: 100%;
+
+  margin-bottom: 5px;
+}
+#firstbox {
+  background: #E7E7E7;
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#resebox1 #name {
+  float: left;
+  border-right: 1px solid #FFF;
+  padding: 5px;
+  color: #333;
+  width: 50%;
+  text-align: left;
+}
+#resebox1 #date {
+  float: left;
+  padding: 5px 0;
+  color: #333;
+  margin-left: 15px;
+}
+#frombox {
+  float: left;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+#from, #to {
+  float: left;
+  background: #fff;
+  color: #333;
+  padding: 10px;
+}
+#resebox #from, #resebox #to {
+  float: left;
+  background: #4482a3;
+  color: #fff;
+  padding: 10px;
+}
+#resebox2 {
+  float: left;
+  width: 100%
+}
+#boxleft {
+  float: left;
+  width: 50%;
+}
+#boxright {
+  float: left;
+  margin-left: 20px;
+}*/
 p#leftside {
   display: inline-block;
   text-shadow: 1px 1px #ccc, -1px -1px #ccc, -1px 1px #ccc, 1px -1px #ccc;
