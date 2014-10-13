@@ -1,35 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Destination</title>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/calc.js"></script>
-    <script type="text/javascript" src="js/language.js"></script>
-  </head>
+<?php
 
-  <body>
-  <div id="body">
-  <div id="wrapper">
-      <header>
-        <img src="img/logo.png">
-      </header>
-      <div id="menu">
-        <ul>
-          <li><a href="index.html" class="sok"></a></li>
-          <li><a href="add.html" class="add active"></a></li>
-          <li><a href="#" class="stars"></a></li>
-          <li><a href="profil.html" class="profile"></a></li>
-        </ul>
-      </div>
+include_once('inc/include.php');
 
-    <div id="content">
-    <form id="calculate-route" name="calculate-route" action="tes.php" method="get">
+$content = <<<END
+
+<form id="calculate-route" name="calculate-route" action="tes.php" method="get">
       <div id="box">
         <div id="leftbox">
           <label for="from" class="from">Från:</label>
@@ -79,9 +54,10 @@
     <p id="error"></p>
     </div>
 
+END;
 
- 
-  </div>
-  </div>
-  </body>
-</html>
+echo $header;
+echo $content;
+echo $footer;
+
+?>

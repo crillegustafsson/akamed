@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Destination</title>
-  </head>
-  <body>
-  <div id="body">
-  <div id="wrapper">
-      <header>
-        <img src="img/logo.png">
-      </header>
-      <div id="menu">
-        <ul>
-          <li><a href="index.html" class="sok active"></a></li>
-          <li><a href="add.html" class="add"></a></li>
-          <li><a href="#" class="stars"></a></li>
-          <li><a href="profil.html" class="profile"></a></li>
-        </ul>
-      </div>
+<?php
 
-    <div id="content">
+include_once('inc/include.php');
+
+$content = <<<END
+
     <form id="calculate-route" name="calculate-route" action="#" method="get">
       <div id="box">
         <div id="leftbox">
@@ -43,14 +26,10 @@
       <!--<input type="reset" />-->
     </form>
     <p id="error"></p>
-    </div>
 
-    <div id="rightside">
-      <div id="result">
-        
-      </div>
-    </div>
-  </div>
-  </div>
-  </body>
-</html>
+END;
+echo $header;
+echo $content;
+echo $footer;
+
+?>
