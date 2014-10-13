@@ -189,7 +189,7 @@ a.boxed {
 a.boxed:hover {
   background: #fff;
 }
-.from, .to {
+.from, .to, .passbox {
   border-radius: 3px;
   padding: 10px;
   border: 1px solid #4482a3;
@@ -199,6 +199,11 @@ a.boxed:hover {
   font-weight: bold;
   display: inline-block;
   width: 50px;
+}
+.passbox {
+  width: 95px;
+  margin-top: 0px;
+  border: 2px solid #4482a3;
 }
 #go {
   width: 90px!important;
@@ -299,6 +304,13 @@ input#slideThree {
   background: #fff;
   color: #333;
   padding: 10px;
+}
+#passbox {
+  float: right;
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  width: 235px;
 }
 #resebox #from, #resebox #to {
   float: left;
