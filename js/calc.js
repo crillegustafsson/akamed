@@ -1,6 +1,6 @@
       function calculateRoute(from, to, datepicker, platser, bes) {
         // Center initialized to Naples, Italy
-        console.log(datepicker + " " + platser + " " + bes);
+        console.log(from + " " + to + " " + datepicker + " " + platser + " " + bes);
 
         var myOptions = {
           zoom: 10,
@@ -47,9 +47,11 @@ function skicka(){
         "url":"sendToDb.php",
         "type":"POST",
         "data":{
-         //"dataStart" : start,
-         //"dataEnd" : end
-        //  "insert" : "insert",
+          "fran":from,
+          "till":to,
+          "date":datepicker,
+          "platser":platser,
+          "beskrivning":bes,
           "startLat":startLat, 
           "startLong":startLong,
           "endLat":endLat,

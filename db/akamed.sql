@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Värd: 127.0.0.1
--- Tid vid skapande: 13 okt 2014 kl 10:31
+-- Tid vid skapande: 13 okt 2014 kl 21:15
 -- Serverversion: 5.6.20
 -- PHP-version: 5.5.15
 
@@ -61,8 +61,17 @@ CREATE TABLE IF NOT EXISTS `resa` (
   `endLong` text NOT NULL,
   `datum` varchar(20) NOT NULL,
   `platser` int(11) NOT NULL,
-  `beskrivning` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `beskrivning` varchar(100) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL,
+  `till` varchar(30) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL,
+  `fran` varchar(30) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
+
+--
+-- Dumpning av Data i tabell `resa`
+--
+
+INSERT INTO `resa` (`Rid`, `startLat`, `startLong`, `endLat`, `endLong`, `datum`, `platser`, `beskrivning`, `till`, `fran`) VALUES
+(42, '57.6347318', '18.295013899999958', '55.60464', '13.00382669999999', '2014-10-13', 0, 'qsjfda', 'malmö', 'visby');
 
 --
 -- Index för dumpade tabeller
@@ -104,7 +113,7 @@ MODIFY `Fid` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT för tabell `resa`
 --
 ALTER TABLE `resa`
-MODIFY `Rid` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `Rid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=43;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
