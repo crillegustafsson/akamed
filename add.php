@@ -4,7 +4,7 @@ include_once('inc/include.php');
 
 $content = <<<END
 
-<form id="calculate-route" name="calculate-route" action="tes.php" method="get">
+<form id="calculate-route" name="calculate-route" action="#" method="get">
       <div id="box">
         <div id="leftbox">
           <label for="from" class="from">Från:</label>
