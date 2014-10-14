@@ -213,6 +213,7 @@ a.boxed:hover {
 #bes {
   float: left;
   width: 358px;
+  height: 
 }
 input {
   border-radius: 3px;
@@ -424,6 +425,7 @@ p#leftside {
   display: block;
 
 }
+/*------ skapa resa --------*/
 #result{
   position: absolute;
   left: 50%;
@@ -431,7 +433,6 @@ p#leftside {
   top: 175px;
   width: 800px;
   background-color: #666;
-
 }
 
 @media all and (max-width: 600px) {

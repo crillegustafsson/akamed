@@ -4,7 +4,7 @@ include_once('inc/include.php');
 
 $content = <<<END
 
-<form id="calculate-route" name="calculate-route" action="#" method="get">
+<form id="calculate-route" name="calculate-route" action="#" method="get" data-id="1">
       <div id="box">
         <div id="leftbox">
           <label for="from" class="from">Från:</label>
@@ -35,7 +35,7 @@ $content = <<<END
           <label for="to" id="go" class="to">Beskrivning:</label>
         </div>
         <div id="rightbox">
-          <input typ="textarea" id="bes" size="40" placeholder="Bekrivning"></input>
+          <input typ="textarea" id="bes" size="40" placeholder="Bekrivning" ></input>
         </div>
         <br /><br>
       </div>

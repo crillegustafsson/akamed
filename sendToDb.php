@@ -10,7 +10,7 @@ mysql_query( "SET NAMES SET 'utf8'");
 mysql_query( "SET CHARACTER SET 'utf8'");
 
 
-
+$id=$_POST['id'];
 $startLat=$_POST['startLat'];
 $startLong=$_POST['startLong'];
 $endLat=$_POST['endLat'];
@@ -23,7 +23,7 @@ $fran=$_POST['fran'];
 
 //end=$_POST['end'];
 
-$sql="INSERT INTO resa(startLat, startLong, endLat, endLong, datum, platser, beskrivning, till, fran) VALUES ( '$startLat', '$startLong', '$endLat', '$endLong', '$date', '$platser', '$beskrivning', '$till', '$fran')";
+$sql="INSERT INTO resa(startLat, startLong, endLat, endLong, datum, platser, beskrivning, till, fran, Aid) VALUES ( '$startLat', '$startLong', '$endLat', '$endLong', '$date', '$platser', '$beskrivning', '$till', '$fran', $id)";
 $result=mysql_query($sql);
 if($result){
 echo "You have been successfully subscribed.";
