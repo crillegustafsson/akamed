@@ -28,10 +28,10 @@ $header = <<<END
       </header>
       <div id="menu">
         <ul>
-          <li><a href="index.php" class="sok active"></a></li>
-          <li><a href="add.php" class="add"></a></li>
+          <li><a href="http://localhost/akamed/index.php" class="sok active"></a></li>
+          <li><a href="http://localhost/akamed/add.php" class="add"></a></li>
           <li><a href="#" class="stars"></a></li>
-          <li><a href="loggain.php" class="profile"></a></li>
+          <li><a href="http://localhost/akamed/loggain.php" class="profile"></a></li>
         </ul>
       </div>
 
@@ -51,4 +51,4 @@ $footer = <<<END
 END;
 
 
- ?>
+?>

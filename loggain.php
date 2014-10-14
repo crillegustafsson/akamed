@@ -1,6 +1,7 @@
 <?php
 
 include_once('inc/include.php');
+include_once('inc/connstring.php');
 
 $content = <<<END
     
