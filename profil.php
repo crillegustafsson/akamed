@@ -1,4 +1,6 @@
 <?php
+include_once('inc/include.php');
+include_once('inc/connstring.php');
 /*-------============= Logga in ==========---------------*/
 
 
@@ -16,7 +18,7 @@
 
 
             $query = <<<END
-              SELECT Fname, Lname, Password, UserID, Email 
+              SELECT Fnamn, Enamn, Password, Aid, Email 
               FROM {$tablePost} 
               WHERE Email = '{$email}'; 
 END;
@@ -35,8 +37,8 @@ session_regenerate_id();
  
 $_SESSION["Email"] = $email; 
 $_SESSION["UserID"] = $row->UserID; 
-$_SESSION["Fname"] = $row->Fname; 
-$_SESSION["Lname"] = $row->Lname; 
+$_SESSION["Fnamn"] = $row->Fname; 
+$_SESSION["Enamn"] = $row->Lname; 
  
 header("Location: index.php"); 
 
