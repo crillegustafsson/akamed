@@ -36,9 +36,9 @@ END;
 session_regenerate_id(); 
  
 $_SESSION["Email"] = $email; 
-$_SESSION["UserID"] = $row->UserID; 
-$_SESSION["Fnamn"] = $row->Fname; 
-$_SESSION["Enamn"] = $row->Lname; 
+$_SESSION["Aid"] = $row->Aid; 
+$_SESSION["Fnamn"] = $row->Fnamn; 
+$_SESSION["Enamn"] = $row->Enamn; 
  
 header("Location: index.php"); 
 

@@ -19,7 +19,7 @@ $content = <<<END
        </div>
         <div id="rightbox">
           <input type="text" id="to" name="to" required="required" placeholder="Göteborg" size="30" />
-        </div>
+      </div>
       <br />
       </div>
       <div id="box">
@@ -30,6 +30,15 @@ $content = <<<END
           <input type="text" id="datepicker" name="datum" required="required" placeholder="Datum" size="30" />
         </div>
       </div>
+        <div id="box">
+          <div id="leftbox">
+           <label for="to" class="to">Antal:</label>
+        </div>
+        <div id="rightbox">
+            <input type="text" id="to" name="to" required="required" placeholder="2 personer" size="30" />
+        </div>
+        <br /><br>
+      </div>
       <div id="box">
         <div id="leftbox">
           <label for="to" id="go" class="to">Beskrivning:</label>
@@ -39,7 +48,9 @@ $content = <<<END
         </div>
         <br /><br>
       </div>
-      <input class="button" type="submit" value="Lägg till" />
+      <div id="sokbox">
+        <input class="button" type="submit" value="Lägg till" />
+      </div>
       <!--<input type="reset" />-->
     </form>
 

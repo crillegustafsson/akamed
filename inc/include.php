@@ -1,5 +1,7 @@
 <?php 
 
+include_once('inc/connstring.php');
+
 $header = <<<END
 
 <!DOCTYPE html>
@@ -8,7 +10,6 @@ $header = <<<END
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
@@ -28,7 +29,7 @@ $header = <<<END
       </header>
       <div id="menu">
         <ul>
-          <li><a href="http://localhost/akamed/index.php" class="sok active"></a></li>
+          <li><a href="http://localhost/akamed/index.php" class="sok"></a></li>
           <li><a href="http://localhost/akamed/add.php" class="add"></a></li>
           <li><a href="#" class="stars"></a></li>
           <li><a href="http://localhost/akamed/loggain.php" class="profile"></a></li>

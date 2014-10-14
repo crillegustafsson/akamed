@@ -2,6 +2,8 @@
 session_start();
 
 include_once('inc/include.php');
+include_once('inc/connstring.php');
+
 
 $from = "";
 $till = "";
@@ -18,7 +20,6 @@ if(!isset($_POST['from']) && !isset($_POST['till'])){
 
   header("location: resultat.php");
 }
-
 
 $content = <<<END
 
@@ -40,7 +41,9 @@ $content = <<<END
         </div>
       <br />
       </div>
-      <input class="button" type="submit" value="Sök resa" />
+        <div id="sokbox">
+          <input class="button" type="submit" value="Sök resa" />
+        </div>
       <!--<input type="reset" />-->
     </form>
     <p id="error"></p>

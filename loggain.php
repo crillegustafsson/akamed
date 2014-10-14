@@ -13,8 +13,10 @@ $content = <<<END
             </div>
             <div id="rightbox">
             <label for="from" class="passbox">Lösenord:</label>
-            <input type="password" class="pass" id="indexPass" name="password" value="" placeholder=""/>
-            <input type="submit" class="button" id="LogginButton" value="Login" id="button">
+              <input type="password" class="pass" id="indexPass" name="password" value="" placeholder=""/>
+            </div>
+            <div id="sokbox">
+              <input type="submit" class="button" id="LogginButton" value="Login" id="button">
             </div>
           </form>
        </div>
