@@ -27,7 +27,6 @@ $fran=$row->fran;
 
 $content =<<<END
 
- 
 <div class="content">
 
 
@@ -38,7 +37,7 @@ $content =<<<END
           <div id="datetext"><p>Datum:</p><div id="datumDisplay">{$datum}</div></div>
           <div id="platstext"><p>Platser:</p><div id="platserDisplay">{$platser}</div></div>
 
-        <div id="map"></div>
+        <div id="map" data-sLat="{$startLat}" data-sLong="{$startLong}" data-eLat="{$endLat}" data-eLong="{$endLong}"></div>
           <div id="bestext"><p>Beskrivning</p>
             <div id="besDisplay">{$bes}</div>
           </div>

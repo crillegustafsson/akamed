@@ -432,8 +432,11 @@ p#leftside {
 }
 #besDisplay {
   color: #333;
-  margin: 5px;
+  width: 380px;
   font-size: 15px;
+  float: left;
+  padding: 10px;
+  text-align: left;
 }
 #fromtext p {
   background: #333;
@@ -591,6 +594,7 @@ p#leftside {
   border-radius: 6px;
   background: #eee;
   box-shadow: 0 0 4px #757575;
+  margin-bottom: 15px;
 }
 
 @media all and (max-width: 600px) {
