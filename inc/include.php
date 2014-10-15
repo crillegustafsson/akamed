@@ -44,6 +44,7 @@ $header = <<<END
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
    <script type="text/javascript" src="js/calc.js"></script>
    <script type="text/javascript" src="js/language.js"></script>
+   <script type="text/javascript" src="js/showMap.js"></script>
 
     <title>Destination</title>
   </head>
