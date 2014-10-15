@@ -6,8 +6,6 @@
  
         var id = getId.getAttribute("data-id");
 
-          console.log(from + " " + to + " " + datepicker + " " + platser + " " + bes + " " + id);
-
         var myOptions = {
           zoom: 10,
           center: new google.maps.LatLng(40.84, 14.25),
@@ -15,7 +13,6 @@
         };
         // Draw the map
         var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
-        var test = document.getElementById("tt");
  
         var directionsService = new google.maps.DirectionsService();
         var directionsRequest = {
@@ -26,7 +23,6 @@
 
         };
         
-        console.log();
 
         directionsService.route(
           directionsRequest,

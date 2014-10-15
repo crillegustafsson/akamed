@@ -1,10 +1,14 @@
 ATT GÖRA PÅ SIDAN
 
+vad hände med hämtaposition på skapa resa????
+
+
+
 ändra startpunkt på kartan
-sökning gav inget resultat
+***sökning gav inget resultat
 ***css på resa.php
 profilupgifter på den som skapade resan på resa.php
-skapa ogiltig resa ska ej gå
-bakgrund på sidan
+skapa ogiltig resa ska ej gå kan bli jobbigt =(
+***bakgrund på sidan
 ändra info på profil
 namn och datum på resorna som kommer på resultat.php
