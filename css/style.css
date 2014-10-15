@@ -407,11 +407,11 @@ p#leftside {
   font-size: 16px;
 }
 #fromDisplay {
-  background: #f7685c;
+  background: #2F6E8F;
   font-size: 15px;
 }
 #toDisplay {
-  background: #6fba33;
+  background: #2F6E8F;
   font-size: 15px;
 }
 #datumDisplay {
@@ -436,11 +436,12 @@ p#leftside {
   font-size: 15px;
 }
 #fromtext p {
-  background: #f34840;
+  background: #333;
   padding: 5px;
+  border-radius: 5px 0px 0 0;
 }
 #totext p {
-  background: #5daa1f;
+  background: #333;
   padding: 5px;
 }
 #datetext p {
@@ -450,6 +451,7 @@ p#leftside {
 #platstext p {
   background: #4b4b4b;
   padding: 5px;
+  border-radius: 0px 5px 0 0;
 }
 
 /*ANVÄNDAR-PANELEN*/
@@ -586,8 +588,7 @@ p#leftside {
   left: 50%;
   margin-left: -200px;
   width: 400px;
-  border: 1px solid #eee;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #eee;
 }
 
