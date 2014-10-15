@@ -3,6 +3,11 @@
 include_once('inc/include.php');
 include_once('inc/connstring.php');
 
+if(!isset($_SESSION["Fnamn"])){
+  header ("location: loggain.php");
+  exit();
+}
+
 
 $from = "";
 $till = "";

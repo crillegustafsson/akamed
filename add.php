@@ -2,6 +2,11 @@
 
 include_once('inc/include.php');
 
+if(!isset($_SESSION["Fnamn"])){
+  header ("location: loggain.php");
+  exit();
+}
+
 $content = <<<END
 
 <form id="calculate-route" name="calculate-route" action="#" method="get" data-id="1">

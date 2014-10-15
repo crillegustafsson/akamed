@@ -3,7 +3,6 @@
 include_once('inc/include.php');
 include_once('inc/connstring.php');
 
-
 /*-------============= Logga in ==========---------------*/
 
 
@@ -65,7 +64,7 @@ $content = <<<END
         <div id="leftbox" class="loginbox">
           <form action="#" method="post" id="login-form">
             <div id="leftbox">
-            <label for="from" class="passbox">Användarnamn:</label>
+            <label for="from" class="passbox">Epost adress:</label>
             <input type="text" class="user" id="indexUser" name="email" value="" placeholder=""/>
             </div>
             <div id="rightbox">

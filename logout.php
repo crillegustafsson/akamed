@@ -6,5 +6,5 @@ $_SESSION = array();
 session_unset();
 session_destroy();
 
-header("location: index.php")
+header("location: profil.php")
  ?>
