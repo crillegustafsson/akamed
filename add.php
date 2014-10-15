@@ -6,10 +6,11 @@ if(!isset($_SESSION["Fnamn"])){
   header ("location: loggain.php");
   exit();
 }
+$Aid = $_SESSION["Aid"];
 
 $content = <<<END
-
-<form id="calculate-route" name="calculate-route" action="#" method="get" data-id="1">
+<p align="center">Här kan du skapa en resa. Fyll i uppgifterna och klicka på Lägg till.</p><br>
+<form id="calculate-route" name="calculate-route" action="#" method="get" data-id="{$Aid}">
       <div id="box">
         <div id="leftbox">
           <label for="from" class="from">Från:</label>

@@ -598,6 +598,12 @@ p#leftside {
   text-align: center;
 }
 /*------ skapa resa --------*/
+p a{
+  color: #4482a3;
+}
+p a:hover{
+  opacity: .7;
+}
 #result{
   position: absolute;
   left: 50%;

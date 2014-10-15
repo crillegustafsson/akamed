@@ -3,12 +3,13 @@ ATT GÖRA PÅ SIDAN
 vad hände med hämtaposition på skapa resa????
 
 
-
-ändra startpunkt på kartan
+lägga till RESAN ÄR NU TILLAGD på lägg tillresa diven
+ändra info på profil
+skapa ogiltig resa ska ej gå -------- kan bli jobbigt =(
+---------------------------------------------------------
+***ändra startpunkt på kartan
 ***sökning gav inget resultat
 ***css på resa.php
-profilupgifter på den som skapade resan på resa.php
-skapa ogiltig resa ska ej gå kan bli jobbigt =(
+***profilupgifter på den som skapade resan på resa.php
 ***bakgrund på sidan
-ändra info på profil
-namn och datum på resorna som kommer på resultat.php
+***namn och datum på resorna som kommer på resultat.php
