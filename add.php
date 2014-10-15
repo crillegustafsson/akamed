@@ -65,6 +65,9 @@ $content = <<<END
         </div>
         <div id="datumDisplay"></div>
         <div id="besDisplay"></div>
+        <div id="toDisplay"></div>
+        <div id="fromDisplay"></div>
+        <div id="platserDisplay"></div>
       </div>
 
     <p id="error"></p>

@@ -136,7 +136,7 @@ function skicka(){
                $('#besDisplay').html( $("#bes").val()  );
                $('#toDisplay').html( $("#to").val()  );
                $('#fromDisplay').html( $("#from").val()  );
-               $('#besDisplay').html( $("#bes").val()  );
+               $('#platserDisplay').html( $("#platser").val()  );
               $('#result').removeClass('hide');
               $('#result').addClass('disp');
 
