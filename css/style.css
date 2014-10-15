@@ -305,6 +305,28 @@ input#slideThree {
   vertical-align: middle;
   margin-top: -5px;
 }
+#feedback {
+  margin-top: 5px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+#feedbox {
+  border-radius: 3px;
+  background: #fff;
+  color: #D60A0A;
+  padding: 10px;
+}
+.utloggad .add,
+.utloggad .stars,
+.utloggad .sok {
+  opacity: 0.2;
+}
+.utloggad .add:hover,
+.utloggad .stars:hover,
+.utloggad .sok:hover {
+  border: 3px solid #fff;
+}
 #readmore a {
   border: 0;
   padding: 10px;

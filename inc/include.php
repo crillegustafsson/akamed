@@ -1,6 +1,32 @@
 <?php 
-
+session_start();
 include_once('inc/connstring.php');
+
+$inloggad = "";
+$utloggad = "";
+
+if(isset($_SESSION["Fnamn"])){
+
+  $inloggad = <<<END
+          <ul>
+          <li><a href="http://localhost/akamed/index.php" class="sok"></a></li>
+          <li><a href="http://localhost/akamed/add.php" class="add"></a></li>
+          <li><a href="#" class="stars"></a></li>
+          <li><a href="http://localhost/akamed/loggain.php" class="profile"></a></li>
+        </ul>
+END;
+
+}else {
+
+    $utloggad = <<<END
+        <ul class="utloggad">
+          <li><a class="sok"></a></li>
+          <li><a class="add"></a></li>
+          <li><a class="stars"></a></li>
+          <li><a href="http://localhost/akamed/loggain.php" class="profile"></a></li>
+        </ul>
+END;
+}
 
 $header = <<<END
 
@@ -11,7 +37,6 @@ $header = <<<END
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -28,14 +53,8 @@ $header = <<<END
         <img src="img/logo.png">
       </header>
       <div id="menu">
-        <ul>
-          <li><a href="http://localhost/akamed/index.php" class="sok"></a></li>
-          <li><a href="http://localhost/akamed/add.php" class="add"></a></li>
-          <li><a href="#" class="stars"></a></li>
-          <li><a href="http://localhost/akamed/loggain.php" class="profile"></a></li>
-        </ul>
+        {$inloggad}{$utloggad}
       </div>
-
     <div id="content">
 
 END;
