@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
 body {
     line-height:1;
-    font-family: helvetica;
+    font-family: 'Pontano Sans', sans-serif, helvetica!important;
     height: 100%;
     font-size: 13px;
 }
@@ -395,19 +395,107 @@ p#leftside {
 
 /* ADD */
 
-#datumDisplay {
+#fromtext, #fromDisplay, #totext, #toDisplay, #datetext, #platstext, #datumDisplay, #besDisplay, #platserDisplay {
   float: left;
-  color: #222;
-  padding: 15px;
-  border-right: 1px solid #C3CFD5;
-  border-radius: 0px;
+  text-align: center;
+  width: 100px;
+  color: #fff;
+}
+#fromDisplay, #toDisplay, #datumDisplay, #platserDisplay {
+  padding: 5px 0;
+  line-height: 25px;
+  font-size: 16px;
+}
+#fromDisplay {
+  background: #f7685c;
+  font-size: 15px;
+}
+#toDisplay {
+  background: #6fba33;
+  font-size: 15px;
+}
+#datumDisplay {
+  background: #4482a3;
+}
+#platserDisplay {
+  background: #4482a3;
+}
+#bestext {
+  float: left;
+  width: 400px;
+  text-align: center;
+}
+#bestext p {
+  background: #4b4b4b;
+  padding: 5px;
+  color: #fff;
 }
 #besDisplay {
-  float: left;
-  color: #222;
-  padding: 15px;
+  color: #333;
+  margin: 5px;
+  font-size: 15px;
+}
+#fromtext p {
+  background: #f34840;
+  padding: 5px;
+}
+#totext p {
+  background: #5daa1f;
+  padding: 5px;
+}
+#datetext p {
+  background: #4b4b4b;
+  padding: 5px;
+}
+#platstext p {
+  background: #4b4b4b;
+  padding: 5px;
 }
 
+/*ANVÄNDAR-PANELEN*/
+
+#userbox {
+  background: #fff;
+  border-radius: 3px;
+  width: 400px;
+}
+#userboxheader {
+  float: left;
+  width: 100%;
+  background: #4482a3;
+  border-radius: 5px 6px 0 0;
+}
+#userleft {
+  float: left;
+}
+#logoutright {
+  float: right;
+}
+#userleft p {
+  padding: 10px;
+  color: #fff;
+}
+#logoutright p a {
+  color: #fff;
+  background: #f34840;
+  text-decoration: none;
+  padding: 10px;
+  float: right;
+  transition: 0.3s;
+  border-radius: 0 5px 0 0;
+}
+#logoutright p a:hover {
+  background: #EC2F26;
+  transition: 0.3s;
+}
+#userboxcontent {
+  float: left;
+  width: 100%;
+  background: #fff;
+}
+#userboxcontent p {
+  padding: 5px;
+}
 /* SLIDE THREE */
 .slideThree {
   width: 80px;
@@ -496,8 +584,8 @@ p#leftside {
 #result{
   position: absolute;
   left: 50%;
-  margin-left: -400px;
-  width: 800px;
+  margin-left: -200px;
+  width: 400px;
   border: 1px solid #eee;
   border-radius: 5px;
   background: #eee;

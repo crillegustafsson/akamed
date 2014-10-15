@@ -59,15 +59,17 @@ $content = <<<END
       <!--<input type="reset" />-->
     </form>
 
-          <div id="result" class="hide">
-        <div id="map">
+      <div id="result" class="hide">
 
-        </div>
-        <div id="datumDisplay"></div>
-        <div id="besDisplay"></div>
-        <div id="toDisplay"></div>
-        <div id="fromDisplay"></div>
-        <div id="platserDisplay"></div>
+          <div id="fromtext"><p>Från:</p><div id="fromDisplay"></div></div>
+          <div id="totext"><p>Till:</p><div id="toDisplay"></div></div>
+          <div id="datetext"><p>Datum:</p><div id="datumDisplay"></div></div>
+          <div id="platstext"><p>Platser:</p><div id="platserDisplay"></div></div>
+
+        <div id="map"></div>
+          <div id="bestext"><p>Beskrivning</p>
+            <div id="besDisplay"></div>
+          </div>
       </div>
 
     <p id="error"></p>
