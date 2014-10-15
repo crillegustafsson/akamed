@@ -49,7 +49,7 @@ $content .= <<<END
                     <label id="to">{$tillStad}</label>
                   </div>
                   <div id="readmore">
-                    <a href="resa.php?Rid={$Rid}">Läs mer</a>
+                    <a href="test.php?Rid={$Rid}">Läs mer</a>
                   </div>
               </div>
           </div>
