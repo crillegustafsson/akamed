@@ -40,7 +40,7 @@ $content = <<<END
            <label for="to" class="to">Antal:</label>
         </div>
         <div id="rightbox">
-            <input type="text" id="platser " name="platser " required="required" placeholder="2 personer" size="30" />
+            <input type="text" id="platser" name="platser" required="required" placeholder="2 personer" size="30" />
         </div>
         <br /><br>
       </div>
