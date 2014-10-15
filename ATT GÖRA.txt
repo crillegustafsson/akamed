@@ -2,7 +2,7 @@ ATT GÖRA PÅ SIDAN
 
 ändra startpunkt på kartan
 sökning gav inget resultat
-css på resa.php
+***css på resa.php
 profilupgifter på den som skapade resan på resa.php
 skapa ogiltig resa ska ej gå
 bakgrund på sidan

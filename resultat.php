@@ -43,7 +43,7 @@ $content .= <<<END
                 <div id="boxleft">
                   <label id="name"><img src="img/profile.png" class="profileicon"> Crille G</label>
                 </div>
-                <div id="boxright">
+                <div id="boxright" class="padd">
                   <label id="date"><img src="img/date.png" class="dateicon"> 2014-12-24</label>
                 </div>
               </div>
