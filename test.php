@@ -117,4 +117,10 @@ map = new google.maps.Map( document.getElementById('map'), {'zoom':12, 'mapTypeI
  </body>
  </html>
 
- 
+<?php
+
+echo $header;
+echo $div;
+echo $footer;
+
+?>
