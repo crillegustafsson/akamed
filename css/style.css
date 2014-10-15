@@ -585,6 +585,9 @@ p#leftside {
   display: block;
 
 }
+#felText{
+  text-align: center;
+}
 /*------ skapa resa --------*/
 #result{
   position: absolute;

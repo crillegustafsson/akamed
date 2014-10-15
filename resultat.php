@@ -4,6 +4,7 @@ include_once('inc/include.php');
 include_once('inc/connstring.php');
 
 $content = "";
+
 $till = $_SESSION['till'];
 
 $from = $_SESSION['from'];
@@ -16,6 +17,14 @@ $res = $mysqli->query($query) or die("Could not query database" . $mysqli->errno
 
 
 
+if($res->num_rows >= 0){
+
+
+$content .=<<<END
+ <div id="felText">Tyvärr fanns det ingen resa från <b>{$from}</b> till <b>{$till}</b>.</div>
+END;
+
+}else{
 
 
 
@@ -58,6 +67,12 @@ $content .= <<<END
 END;
 
 }
+
+
+
+
+}
+
 
 echo $header;
 echo $content;
