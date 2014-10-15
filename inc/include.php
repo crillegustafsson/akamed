@@ -12,7 +12,7 @@ if(isset($_SESSION["Fnamn"])){
           <li><a href="http://localhost/akamed/index.php" class="sok"></a></li>
           <li><a href="http://localhost/akamed/add.php" class="add"></a></li>
           <li><a href="#" class="stars"></a></li>
-          <li><a href="http://localhost/akamed/loggain.php" class="profile"></a></li>
+          <li><a href="http://localhost/akamed/profil.php" class="profile"></a></li>
         </ul>
 END;
 
