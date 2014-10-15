@@ -588,8 +588,9 @@ p#leftside {
   left: 50%;
   margin-left: -200px;
   width: 400px;
-  border-radius: 3px;
+  border-radius: 6px;
   background: #eee;
+  box-shadow: 0 0 4px #757575;
 }
 
 @media all and (max-width: 600px) {

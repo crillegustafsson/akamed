@@ -18,6 +18,7 @@ $endLong=$row->endLong;
 $bes=$row->beskrivning;
 $id=$row->Rid;
 $platser=$row->platser;
+$datum=$row->datum;
 $till=$row->till;
 $fran=$row->fran;
 
@@ -26,13 +27,22 @@ $fran=$row->fran;
 
 $content =<<<END
 
- <div id="map" style="width:900px; height:550px;" data-sLat="{$startLat}" data-sLong="{$startLong}" data-eLat="{$endLat}" data-eLong="{$endLong}"></div>
+ 
 <div class="content">
 
-{$till}<br>
-{$fran}<br>
-{$platser}<br>
-{$bes}<br>
+
+<div id="result">
+
+          <div id="fromtext"><p>Från:</p><div id="fromDisplay">{$fran}</div></div>
+          <div id="totext"><p>Till:</p><div id="toDisplay">{$till}</div></div>
+          <div id="datetext"><p>Datum:</p><div id="datumDisplay">{$datum}</div></div>
+          <div id="platstext"><p>Platser:</p><div id="platserDisplay">{$platser}</div></div>
+
+        <div id="map"></div>
+          <div id="bestext"><p>Beskrivning</p>
+            <div id="besDisplay">{$bes}</div>
+          </div>
+      </div>
 
 
 </div>
