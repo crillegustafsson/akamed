@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 include_once('inc/include.php');
 include_once('inc/connstring.php');
