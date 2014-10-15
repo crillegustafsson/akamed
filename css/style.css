@@ -145,7 +145,7 @@ h2 {
 }
 .profile {
   padding: 15px 23px;
-  background: #fff url('../img/profile.png') no-repeat 6px 6px;
+  background: #fff url('../img/profile1.png') no-repeat 6px 6px;
   border-radius: 50%;
 }
 .sok,
@@ -340,10 +340,14 @@ input#slideThree {
   display: inline-block;
   border-radius: 3px;
 }
+#readmore a:hover {
+  background: #236486;
+}
 #frombox {
   float: left;
-  background: #333;
-  color: #fff;
+  background: #fff;
+  color: #888;
+  border-right: 1px solid #DDD;
   padding: 10px;
 }
 #from, #to {
@@ -364,9 +368,11 @@ input#slideThree {
 }
 #resebox #from, #resebox #to {
   float: left;
-  background: #4482a3;
-  color: #fff;
+  background: #fff;
+  color: #555;
   padding: 10px;
+  line-height: 13px;
+  font-size: 18px;
 }
 #resebox2 {
   float: left;
@@ -375,11 +381,14 @@ input#slideThree {
 #boxleft {
   float: left;
   width: 50%;
-  padding: 0 10px;
+  padding-left: 10px;
 }
 #boxright {
   float: left;
   padding: 0 10px;
+}
+.padd {
+  padding-left: 20px!important;
 }
 #readmore {
   width: 100%;
