@@ -134,6 +134,9 @@ function skicka(){
             
                $('#datumDisplay').html( $("#datepicker").val()  );
                $('#besDisplay').html( $("#bes").val()  );
+               $('#toDisplay').html( $("#to").val()  );
+               $('#fromDisplay').html( $("#from").val()  );
+               $('#besDisplay').html( $("#bes").val()  );
               $('#result').removeClass('hide');
               $('#result').addClass('disp');
 

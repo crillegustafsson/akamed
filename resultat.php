@@ -4,7 +4,9 @@ session_start();
 include_once('inc/include.php');
 include_once('inc/connstring.php');
 
+$content = "";
 $till = $_SESSION['till'];
+
 $from = $_SESSION['from'];
 
 $query = <<<END
@@ -13,14 +15,19 @@ END;
 
 $res = $mysqli->query($query) or die("Could not query database" . $mysqli->errno . " : " . $mysqli->error);
 
-$row = $res->fetch_object();
 
 
-$tillStad = $row->till;
+
+
+
+
+while($row = $res->fetch_object()) {
+
+  $tillStad = $row->till;
 $franStad = $row->fran;
 $Rid = $row->Rid;
 
-$content = <<<END
+$content .= <<<END
 
  <div id="resebox">
           <div id="resebox1">
@@ -50,6 +57,8 @@ $content = <<<END
   </div>
 
 END;
+
+}
 
 echo $header;
 echo $content;
