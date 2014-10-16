@@ -5,6 +5,6 @@ sökning gav inget resultat
 ***css på resa.php
 profilupgifter på den som skapade resan på resa.php
 skapa ogiltig resa ska ej gå
-bakgrund på sidan
+***bakgrund på sidan
 ändra info på profil
 namn och datum på resorna som kommer på resultat.php
