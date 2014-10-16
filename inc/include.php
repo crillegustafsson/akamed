@@ -46,7 +46,8 @@ $header = <<<END
    <script type="text/javascript" src="js/language.js"></script>
    <script type="text/javascript" src="js/showMap.js"></script>
 
-    <title>Destination</title>
+    <title>Åkamed | Tillsammans sparar vi på miljön</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
   </head>
   <body>
   <div id="body">

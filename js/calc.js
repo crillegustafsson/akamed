@@ -6,16 +6,13 @@
  
         var id = getId.getAttribute("data-id");
 
-          console.log(from + " " + to + " " + datepicker + " " + platser + " " + bes + " " + id);
-
         var myOptions = {
           zoom: 10,
-          center: new google.maps.LatLng(40.84, 14.25),
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          center: new google.maps.LatLng(59.37854329999999, 13.501638400000047),
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
         };
         // Draw the map
         var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
-        var test = document.getElementById("tt");
  
         var directionsService = new google.maps.DirectionsService();
         var directionsRequest = {
@@ -26,7 +23,6 @@
 
         };
         
-        console.log();
 
         directionsService.route(
           directionsRequest,

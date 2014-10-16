@@ -39,6 +39,7 @@ $_SESSION["Email"] = $email;
 $_SESSION["Aid"] = $row->Aid; 
 $_SESSION["Fnamn"] = $row->Fnamn; 
 $_SESSION["Enamn"] = $row->Enamn;
+$_SESSION["tele"] = $row->tele;
  
 header("Location: profil.php"); 
 
@@ -60,7 +61,9 @@ $password = htmlspecialchars($password);
 
 /*-------============= Logga in SLUT =====---------------*/
 $content = <<<END
-    
+    <p align="center">Välkommen till Åkamed.se!</p><br>
+    <p align="center">Logga in för att skapa eller sök på en sammåknings resa.</p><br>
+
         <div id="leftbox" class="loginbox">
           <form action="#" method="post" id="login-form">
             <div id="leftbox">
@@ -72,8 +75,9 @@ $content = <<<END
               <input type="password" class="pass" id="indexPass" name="password" value="" placeholder=""/>
             </div>
             <div id="sokbox">
-              <input type="submit" class="button" id="LogginButton" value="Login" id="button">
+              <input type="submit" class="button" id="LogginButton" value="Login" id="button"><br><br>
             </div>
+            <p align="center">Inget konto? registrera dig <a href="#">här</a></p>
             <div id="feedback">
               {$feedback}
             </div>

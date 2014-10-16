@@ -230,6 +230,27 @@ input:focus {
 input#slideThree {
   display: none;
 }
+.regTop {
+  text-align: center;
+}
+#widebox {
+  background: #37708E;
+  width: 280px;
+  display: inline-block;
+  border-radius: 5px 5px 0 0;
+}
+#widebox p {
+  color: #fff;
+  padding: 10px;
+}
+#change {
+  border-radius: 3px;
+  padding: 10px;
+  outline: 0;
+  display: inline-block;
+  width: 280px;
+  text-decoration: none;
+}
 .button {
   border: 0;
   padding: 10px;
@@ -429,7 +450,7 @@ p#leftside {
 #platserDisplay {
   background: #4482a3;
 }
-#bestext {
+#bestext, #headtitel {
   float: left;
   width: 400px;
   text-align: center;
@@ -438,6 +459,46 @@ p#leftside {
   background: #4b4b4b;
   padding: 5px;
   color: #fff;
+}
+#headtitel p {
+  background: #2F6E8F;
+  color: #fff;
+  padding: 5px;
+}
+#headtitel img, #userboxheader img {
+  height: 12px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+#userboxcontent .mail {
+  padding: 16px 16px;
+  background: #2F6E8F url('../img/mail.png') no-repeat 6px 6px;
+  border-radius: 50%;
+  background-size: 20px;
+  float: left;
+}
+#userboxcontent .tele {
+  padding: 16px 16px;
+  background: #2F6E8F url('../img/phone.png') no-repeat 9px 6px;
+  border-radius: 50%;
+  background-size: 12px;
+  float: left;
+}
+#ubcontent {
+  padding: 10px;
+  float: left;
+  width: 400px;
+}
+#ubcontent p {
+  float: left;
+}
+#center {
+  text-align: center;
+}
+.row {
+  float: left;
+  width: 400px;
+  padding: 5px 0px;
 }
 #besDisplay {
   color: #333;
@@ -594,7 +655,16 @@ p#leftside {
   display: block;
 
 }
+#felText{
+  text-align: center;
+}
 /*------ skapa resa --------*/
+p a{
+  color: #4482a3;
+}
+p a:hover{
+  opacity: .7;
+}
 #result{
   position: absolute;
   left: 50%;
