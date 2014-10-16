@@ -5,6 +5,7 @@ include_once('inc/connstring.php');
 
 $content = "";
 
+
 $till = $_SESSION['till'];
 $Aid = $_SESSION['Aid'] ;
 $from = $_SESSION['from'];

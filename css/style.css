@@ -243,6 +243,9 @@ input#slideThree {
   color: #fff;
   padding: 10px;
 }
+#boxleft .name {
+  float: left;
+}
 #change {
   border-radius: 3px;
   padding: 10px;
@@ -309,7 +312,7 @@ input#slideThree {
   float: left;
   padding: 5px;
   color: #757575;
-  width: 50%;
+  width: 100%;
   text-align: left;
 }
 #resebox1 #date {

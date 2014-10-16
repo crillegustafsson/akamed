@@ -9,10 +9,10 @@ if(isset($_SESSION["Fnamn"])){
 
   $inloggad = <<<END
           <ul>
-          <li><a href="http://localhost/akamed/index.php" class="sok"></a></li>
-          <li><a href="http://localhost/akamed/add.php" class="add"></a></li>
+          <li><a href="index.php" class="sok"></a></li>
+          <li><a href="add.php" class="add"></a></li>
           <li><a href="#" class="stars"></a></li>
-          <li><a href="http://localhost/akamed/profil.php" class="profile"></a></li>
+          <li><a href="profil.php" class="profile"></a></li>
         </ul>
 END;
 
@@ -23,7 +23,7 @@ END;
           <li><a class="sok"></a></li>
           <li><a class="add"></a></li>
           <li><a class="stars"></a></li>
-          <li><a href="http://localhost/akamed/loggain.php" class="profile"></a></li>
+          <li><a href="loggain.php" class="profile"></a></li>
         </ul>
 END;
 }
