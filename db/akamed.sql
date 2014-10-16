@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
+-- version 4.0.4
 -- http://www.phpmyadmin.net
 --
--- Värd: 127.0.0.1
--- Tid vid skapande: 13 okt 2014 kl 21:15
--- Serverversion: 5.6.20
--- PHP-version: 5.5.15
+-- Värd: localhost
+-- Skapad: 16 okt 2014 kl 12:45
+-- Serverversion: 5.6.12-log
+-- PHP-version: 5.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,21 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Databas: `akamed`
 --
-
--- --------------------------------------------------------
-
---
--- Tabellstruktur `användare`
---
-
-CREATE TABLE IF NOT EXISTS `användare` (
-`Aid` int(11) NOT NULL,
-  `Fnamn` varchar(25) NOT NULL,
-  `Enamn` varchar(50) NOT NULL,
-  `Email` varchar(50) NOT NULL,
-  `tele` varchar(50) NOT NULL,
-  `password` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE DATABASE IF NOT EXISTS `akamed` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `akamed`;
 
 -- --------------------------------------------------------
 
@@ -42,9 +29,10 @@ CREATE TABLE IF NOT EXISTS `användare` (
 --
 
 CREATE TABLE IF NOT EXISTS `favoriter` (
-`Fid` int(11) NOT NULL,
+  `Fid` int(11) NOT NULL AUTO_INCREMENT,
   `Aid` int(11) NOT NULL,
-  `Rid` int(11) NOT NULL
+  `Rid` int(11) NOT NULL,
+  PRIMARY KEY (`Fid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -54,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `favoriter` (
 --
 
 CREATE TABLE IF NOT EXISTS `resa` (
-`Rid` int(11) NOT NULL,
+  `Rid` int(11) NOT NULL AUTO_INCREMENT,
   `startLat` text NOT NULL,
   `startLong` text NOT NULL,
   `endLat` text NOT NULL,
@@ -63,57 +51,34 @@ CREATE TABLE IF NOT EXISTS `resa` (
   `platser` int(11) NOT NULL,
   `beskrivning` varchar(100) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL,
   `till` varchar(30) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL,
-  `fran` varchar(30) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
+  `fran` varchar(30) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL,
+  `Aid` int(11) NOT NULL,
+  PRIMARY KEY (`Rid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=90 ;
+
+-- --------------------------------------------------------
 
 --
--- Dumpning av Data i tabell `resa`
+-- Tabellstruktur `user`
 --
 
-INSERT INTO `resa` (`Rid`, `startLat`, `startLong`, `endLat`, `endLong`, `datum`, `platser`, `beskrivning`, `till`, `fran`) VALUES
-(42, '57.6347318', '18.295013899999958', '55.60464', '13.00382669999999', '2014-10-13', 0, 'qsjfda', 'malmö', 'visby');
+CREATE TABLE IF NOT EXISTS `user` (
+  `Aid` int(11) NOT NULL AUTO_INCREMENT,
+  `Fnamn` varchar(25) NOT NULL,
+  `Enamn` varchar(50) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `tele` varchar(50) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  PRIMARY KEY (`Aid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Index för dumpade tabeller
+-- Dumpning av Data i tabell `user`
 --
 
---
--- Index för tabell `användare`
---
-ALTER TABLE `användare`
- ADD PRIMARY KEY (`Aid`);
+INSERT INTO `user` (`Aid`, `Fnamn`, `Enamn`, `Email`, `tele`, `password`) VALUES
+(1, 'Christopher', 'Gustafsson', 'test@mail.se', '0733333333', 'password');
 
---
--- Index för tabell `favoriter`
---
-ALTER TABLE `favoriter`
- ADD PRIMARY KEY (`Fid`);
-
---
--- Index för tabell `resa`
---
-ALTER TABLE `resa`
- ADD PRIMARY KEY (`Rid`);
-
---
--- AUTO_INCREMENT för dumpade tabeller
---
-
---
--- AUTO_INCREMENT för tabell `användare`
---
-ALTER TABLE `användare`
-MODIFY `Aid` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT för tabell `favoriter`
---
-ALTER TABLE `favoriter`
-MODIFY `Fid` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT för tabell `resa`
---
-ALTER TABLE `resa`
-MODIFY `Rid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=43;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
