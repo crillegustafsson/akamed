@@ -39,6 +39,7 @@ $_SESSION["Email"] = $email;
 $_SESSION["Aid"] = $row->Aid; 
 $_SESSION["Fnamn"] = $row->Fnamn; 
 $_SESSION["Enamn"] = $row->Enamn;
+$_SESSION["tele"] = $row->tele;
  
 header("Location: profil.php"); 
 
@@ -76,7 +77,7 @@ $content = <<<END
             <div id="sokbox">
               <input type="submit" class="button" id="LogginButton" value="Login" id="button"><br><br>
             </div>
-            <p align="center">Inger konto? registrera dig <a href="#">här</a></p>
+            <p align="center">Inget konto? registrera dig <a href="#">här</a></p>
             <div id="feedback">
               {$feedback}
             </div>

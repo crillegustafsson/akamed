@@ -48,8 +48,9 @@ $content =<<<END
           <div id="platstext"><p>Platser:</p><div id="platserDisplay">{$platser}</div></div>
 
         <div id="map" data-sLat="{$startLat}" data-sLong="{$startLong}" data-eLat="{$endLat}" data-eLong="{$endLong}"></div>
+          <div id="headtitel"><p><img src="img/profilevit.png"> {$Fnamn} {$Enamn} | <img src="img/mail.png" class="mail"> {$Email} | <img src="img/phone.png"> {$tele}</p></div>
           <div id="bestext"><p>Beskrivning</p>
-            <div id="besDisplay">{$bes}<br>{$Fnamn} {$Enamn} {$Email} {$tele}</div>
+            <div id="besDisplay">{$bes}</div>
           </div>
       </div>
 
