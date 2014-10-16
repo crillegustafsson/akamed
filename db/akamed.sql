@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Värd: localhost
--- Skapad: 16 okt 2014 kl 12:45
+-- Skapad: 16 okt 2014 kl 13:31
 -- Serverversion: 5.6.12-log
 -- PHP-version: 5.4.12
 
@@ -54,7 +54,15 @@ CREATE TABLE IF NOT EXISTS `resa` (
   `fran` varchar(30) CHARACTER SET utf8 COLLATE utf8_swedish_ci NOT NULL,
   `Aid` int(11) NOT NULL,
   PRIMARY KEY (`Rid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=90 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=92 ;
+
+--
+-- Dumpning av Data i tabell `resa`
+--
+
+INSERT INTO `resa` (`Rid`, `startLat`, `startLong`, `endLat`, `endLong`, `datum`, `platser`, `beskrivning`, `till`, `fran`, `Aid`) VALUES
+(90, '57.70863259999999', '11.974693500000058', '56.6743775', '12.858217200000013', '2014-10-15', 5, 'hej', 'Halmstad', 'Göteborg', 1),
+(91, '57.3554934', '14.475631600000042', '57.70863259999999', '11.974693500000058', '2014-10-24', 5, 'Hejsan', 'Göteborg', 'Vrigstad', 1);
 
 -- --------------------------------------------------------
 
@@ -77,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`Aid`, `Fnamn`, `Enamn`, `Email`, `tele`, `password`) VALUES
-(1, 'Christopher', 'Gustafsson', 'test@mail.se', '0733333333', 'password');
+(1, 'Test', 'Romhagen', 'test@mail.se', '07333333', 'password');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
