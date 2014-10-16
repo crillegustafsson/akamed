@@ -46,7 +46,7 @@ $header = <<<END
    <script type="text/javascript" src="js/language.js"></script>
    <script type="text/javascript" src="js/showMap.js"></script>
 
-    <title>Destination</title>
+    <title>Åkamed.se</title>
   </head>
   <body>
   <div id="body">
