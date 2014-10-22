@@ -23,7 +23,7 @@ $content = <<<END
         <div id="leftbox">
          <label for="to" class="to">Till:</label>
        </div>
-        <div id="rightbox">
+        <div id="leftbox">
           <input type="text" id="to" name="to" required="required" placeholder="Göteborg" size="30" />
       </div>
       <br />

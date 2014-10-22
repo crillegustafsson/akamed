@@ -1,18 +1,9 @@
 ATT GÖRA PÅ SIDAN
 
-<<<<<<< HEAD
-ändra startpunkt på kartan
-sökning gav inget resultat
-***css på resa.php
-profilupgifter på den som skapade resan på resa.php
-skapa ogiltig resa ska ej gå
-***bakgrund på sidan
-=======
 vad hände med hämtaposition på skapa resa????
 
 
 lägga till RESAN ÄR NU TILLAGD på lägg tillresa diven
->>>>>>> 3c34de8912799bb9e9eaab7012590ad6aa128e45
 ändra info på profil
 skapa ogiltig resa ska ej gå -------- kan bli jobbigt =(
 ---------------------------------------------------------
@@ -22,3 +13,9 @@ skapa ogiltig resa ska ej gå -------- kan bli jobbigt =(
 ***profilupgifter på den som skapade resan på resa.php
 ***bakgrund på sidan
 ***namn och datum på resorna som kommer på resultat.php
+
+fick frågeställning
+gruppen väldigt viktig för projektet
+hur sätter man samman gruppen
+frågorna
+

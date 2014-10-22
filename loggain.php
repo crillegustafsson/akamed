@@ -70,7 +70,7 @@ $content = <<<END
             <label for="from" class="passbox">Epost adress:</label>
             <input type="text" class="user" id="indexUser" name="email" value="" placeholder=""/>
             </div>
-            <div id="rightbox">
+            <div id="leftbox">
             <label for="from" class="passbox">Lösenord:</label>
               <input type="password" class="pass" id="indexPass" name="password" value="" placeholder=""/>
             </div>
